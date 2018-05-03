@@ -1,8 +1,12 @@
-file = open("text.txt", "r")
+filename = raw_input('Please enter filename')
 
-c = 0
+file = open(filename, 'r')
+
+l = c = 0
+
 for i in file:
-    for j in i:
-        if j == " ":
-            c += 1
-print(c+1)
+  l += 1
+  for j in i:
+    if j == " ":
+      c += 1
+print c+l
